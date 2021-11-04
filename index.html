@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="impuestos, calculadora">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En esta calculadora de impuestos podras ver el valor final de un producto.">
+    <meta name="author" content="Bautista Pietraroia">
+    <meta name="copyright" content="Bautista Pietraroia">
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <div class="calculadora">
+            <input type="text" id="result" placeholder="0" class="display">
+            <div class="calculadoraBotones">
+                <button class="botonCalculadora" name="data-number">9</button>
+                <button class="botonCalculadora" name="data-number">8</button>
+                <button class="botonCalculadora" name="data-number">7</button>
+                <button class="botonCalculadora" name="data-opera" title="Sumar">+</button>
+                <button class="botonCalculadora" name="data-number">6</button>
+                <button class="botonCalculadora" name="data-number">5</button>
+                <button class="botonCalculadora" name="data-number">4</button>
+                <button class="botonCalculadora" name="data-opera" title="Restar">-</button>
+                <button class="botonCalculadora" name="data-number">3</button>
+                <button class="botonCalculadora" name="data-number">2</button>
+                <button class="botonCalculadora" name="data-number">1</button>
+                <button class="botonCalculadora" name="data-opera" title="Multiplicar">x</button>
+                <button class="botonCalculadora" name="data-igual" title="Resultado">=</button>
+                <button class="botonCalculadora" name="data-number">0</button>
+                <button class="botonCalculadora" name="data-delete" title="Reiniciar">C</button>
+                <button class="botonCalculadora" name="data-opera" title="Dividir">/</button>
+            </div>
+        </div>
+        <div class="options">
+            <img class="dark-mode" src="images/darkmode.png" alt="dark-mode" title="Dark Mode">
+            <div class="color-rosa" title="Cambiar color"></div>
+            <div class="color-celeste" title="Cambiar color"></div>
+            <img src="images/question.jpg" alt="question" id="btnModal" title="Preguntas">
+        </div>
+        <div id="tvesModal" class="modalContainer">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <h1>Calculadora</h1>
+                <p>Tienes dudas, errores, consejos o algo que quieras contarnos sobre tu experiencia? Envianos un mensaje!</p>
+                <form method="post" id="form">
+                    <input type="name" placeholder="Nombre" required id="nombre" name="nombre">
+                    <input type="email" placeholder="Email" required id="email" name="email">
+                    <textarea cols="30" rows="10" style="resize: none;" placeholder="Mensaje" required id="mensaje" name="mensaje"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+                <p id="respa"></p>
+            </div>
+        </div> 
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
